@@ -1,3 +1,5 @@
+/* eslint-disable react/no-children-prop */
+/* eslint-disable jsx-a11y/alt-text */
 import * as React from "react";
 
 import { baseComponents } from "../components/markdown";
