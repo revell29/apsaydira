@@ -1,13 +1,3 @@
 {
-  "extends": ["next", "next/core-web-vitals", "plugin:@next/next/recommended"],
-  "rules": {
-    // react rules
-    "jsx-a11y/accessible-emoji": "off",
-    "react/jsx-sort-props": [
-      "warn",
-      {
-        "reservedFirst": ["key"]
-      }
-    ]
-  }
+  "extends": ["next", "next/core-web-vitals", "plugin:@next/next/recommended"]
 }
