@@ -1,11 +1,5 @@
 {
-  "extends": [
-    "next",
-    "next/core-web-vitals",
-    "plugin:@next/next/recommended",
-    "kentcdodds/jsx-a11y",
-    "kentcdodds/react"
-  ],
+  "extends": ["next", "next/core-web-vitals", "plugin:@next/next/recommended"],
   "rules": {
     // react rules
     "jsx-a11y/accessible-emoji": "off",
