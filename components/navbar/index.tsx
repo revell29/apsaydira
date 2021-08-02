@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
       bgColor={bgColor}
       borderBottomColor="whiteAlpha.50"
       borderBottomWidth="2px"
-      d={["none", "flex"]}
+      d={["flex"]}
       insetX={0}
       justify="center"
       p={[2, 4]}
