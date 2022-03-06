@@ -28,7 +28,7 @@ const DefaultLayout: React.FC = (props) => {
       <DefaultSeo
         canonical={siteConfig.siteUrl + (router.asPath || "")}
         defaultTitle="Apsyadira"
-        description="A personal web @apsyadira"
+        description="Software Engineer, Tech enthusiast, and happy to help people learn programing."
         openGraph={{
           type: "website",
           site_name: "apsyadira",

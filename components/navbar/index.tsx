@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
     [router.route]
   );
 
-  const [gray900] = useToken("colors", ["gray.900"]) as [string];
+  const [gray900] = useToken("colors", ["#111111"]) as [string];
   const bgColor = `${gray900}E6`;
   const lighterBgColor = `${gray900}99`;
 

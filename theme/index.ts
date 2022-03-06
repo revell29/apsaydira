@@ -1,8 +1,4 @@
-import {
-  extendTheme,
-  theme as defaultTheme,
-  ThemeOverride,
-} from "@chakra-ui/react";
+import { extendTheme, theme as defaultTheme, ThemeOverride } from "@chakra-ui/react";
 
 export default extendTheme(<ThemeOverride>{
   components: {
@@ -58,7 +54,7 @@ export default extendTheme(<ThemeOverride>{
         scrollBehavior: "smooth",
       },
       body: {
-        bg: "gray.900",
+        bg: "#111111",
         color: "whiteAlpha.900",
         cursor: "default",
         fontFamily: "body",

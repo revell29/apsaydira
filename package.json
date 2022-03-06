@@ -16,6 +16,7 @@
     "framer-motion": "^4",
     "graphql": "^15.5.1",
     "graphql-request": "^3.5.0",
+    "motion": "^10.6.2",
     "next": "11.0.1",
     "next-seo": "^4.26.0",
     "react": "17.0.2",
@@ -25,7 +26,8 @@
     "react-markdown": "^6.0.3",
     "react-syntax-highlighter": "^15.4.4",
     "remark-slug": "^6.1.0",
-    "remark-toc": "^7.2.0"
+    "remark-toc": "^7.2.0",
+    "swr": "^1.2.2"
   },
   "devDependencies": {
     "@types/react": "17.0.15",
