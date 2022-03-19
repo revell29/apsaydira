@@ -1,14 +1,8 @@
 import * as React from "react";
 
-import {
-  ButtonGroup,
-  Container,
-  Icon,
-  IconButton,
-  Stack,
-} from "@chakra-ui/react";
+import { ButtonGroup, Container, Icon, IconButton, Stack } from "@chakra-ui/react";
 import { BiCommand } from "react-icons/bi";
-import { FaGithub, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaTwitter, FaEnvelope } from "react-icons/fa";
 import ReactMarkdown from "react-markdown";
 
 const Footer: React.FC = () => {
@@ -44,10 +38,12 @@ MIT License &copy; ${new Date().getFullYear()}&ndash;present
             variant="ghost"
           />
           <IconButton
-            aria-label="Open keybinds cheatsheet"
-            icon={<Icon as={BiCommand} />}
-            onClick={() => open()}
+            aria-label="Email"
+            as="a"
+            icon={<Icon as={FaEnvelope} />}
+            href="mailto:apsya87@gmail.com"
             rounded="full"
+            target="_blank"
             variant="ghost"
           />
         </ButtonGroup>

@@ -11,7 +11,9 @@ export default extendTheme(<ThemeOverride>{
     Link: {
       variants: {
         link: {
-          color: "pink.400",
+          color: "purple.500",
+          textDecorationLine: "underline",
+          textUnderlineOffset: "4px",
         },
       },
     },
@@ -37,8 +39,8 @@ export default extendTheme(<ThemeOverride>{
   },
 
   fonts: {
-    body: `'Archivo',${defaultTheme.fonts.body}`,
-    heading: `'Manrope',${defaultTheme.fonts.heading}`,
+    body: `'Lexend',${defaultTheme.fonts.body}`,
+    heading: `'Lexend',${defaultTheme.fonts.heading}`,
   },
 
   styles: {

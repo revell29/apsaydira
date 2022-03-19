@@ -10,24 +10,23 @@ const HomePage: NextPage = (props) => {
   return (
     <>
       <NextSeo title="Apsyadira" />
-      <Container maxW="4xl" p={[4, 8]} alignItems="center" h="auto">
+      <Container maxW="3xl" p={[4, 8]} alignItems="center" h="auto">
         <Flex
           alignItems={["flex-start", "flex-start", "center"]}
           w="full"
           justifyContent="space-between"
-          experimental_spaceX={3}
           h="full"
           pt={16}
           flexDir={["column", "column", "row"]}
         >
-          <Box order={{ base: 2, md: 2 }} mt={{ base: 8, md: 0 }}>
-            <Heading size="3xl" mb={4}>
+          <Box order={{ base: 2, md: 2 }} mt={{ base: 8, md: 0 }} mr={9}>
+            <Heading size="xl" mb={4}>
               Apsyadira.
             </Heading>
-            <Text>Fullstack Engineer at Jubelio</Text>
+            <Text>Software Engineer at Jubelio</Text>
             <Text color="whiteAlpha.700" maxW="lg" mt={5}>
-              Software Engineer, helping people to learn about web development, severless, and React/Next.js and making
-              an impact on the world, bits by bytes.
+              Happy to help people learn about web development, severless, React/Next, and making an impact on the
+              world, bits by bytes.
             </Text>
 
             <Box h={8} />
@@ -66,7 +65,7 @@ const HomePage: NextPage = (props) => {
               <Image
                 src="https://avatars.githubusercontent.com/u/19900349?v=4"
                 alt="Profile"
-                w={{ base: "90px", md: "250px" }}
+                w={{ base: "50px", md: "165px" }}
               />
             </Box>
           </NextLink>

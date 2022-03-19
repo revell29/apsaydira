@@ -6,7 +6,7 @@ import { baseComponents } from "../components/markdown";
 import cms from "../lib/cms";
 import { AboutPagePropsQuery } from "../lib/graphql";
 import metaConfig from "../config/meta";
-import { Box, Container, Heading, Link, List, ListItem, SimpleGrid, Stack, Text } from "@chakra-ui/react";
+import { Box, Container, Link, List, ListItem, Stack, Text, Heading } from "@chakra-ui/react";
 import trimHttps from "../shared/utils/trim-https";
 import { GetStaticProps } from "next";
 import { NextSeo } from "next-seo";
@@ -37,16 +37,27 @@ const AboutPage: NextPage<AboutPageProps> = (props) => {
 
   const socials = [
     {
-      name: "Github",
-      href: "https://github.com/revell29",
-    },
-    {
       name: "Twitter",
       href: "https://twitter.com/apsyadiraa",
     },
     {
       name: "Instagram",
       href: "https://instagram/apsyadiraa",
+    },
+  ];
+
+  const experience = [
+    {
+      title: "Squad Lead at Jubelio (March 2022 - present)",
+    },
+    {
+      title: "Fullstack Engineer at Jubelio (November 2020 - March 2022)",
+    },
+    {
+      title: "Software Engineer at Veritlogic (April 2018 - November 2020)",
+    },
+    {
+      title: "Web Developer at PT Koloni Timur (February 2017 - January 2018)",
     },
   ];
 
@@ -59,38 +70,20 @@ const AboutPage: NextPage<AboutPageProps> = (props) => {
           <Image data={data.about?.cover?.responsiveImage as ResponsiveImageType} />
         </Box>
 
-        <Stack lineHeight="tall" pb={8} spacing={4}>
+        <Stack lineHeight="tall" pb={5} spacing={4}>
           <ReactMarkdown children={data.about?.preface as string} components={baseComponents} />
         </Stack>
-
-        {/* <SimpleGrid columns={[2, 3, 4]} gap={4}>
-          {data.about?.knowledgeBases?.map(
-            (kb) =>
-              kb && (
-                <Box key={kb.title}>
-                  <Heading pb={4} size="md">
-                    {kb.title}
-                  </Heading>
-                  <List fontSize="sm" spacing={1}>
-                    {kb.entries?.split(", ").map((e, i) => (
-                      <ListItem key={i}>{e.trim()}</ListItem>
-                    ))}
-                  </List>
-                </Box>
-              )
-          )}
-        </SimpleGrid> */}
 
         <Box h={8} />
 
         <Text pb={2}>
-          You can reach out via email at{" "}
+          You can reach out via email at ✉️ &nbsp;
           <Link href={`mailto:${metaConfig?.mailto as string}`} variant="link">
             {metaConfig?.mailto}
           </Link>
           , or via socials below:
         </Text>
-        <List spacing={1}>
+        <List spacing={3} pb={8}>
           {socials.map(({ name, href }) => (
             <ListItem key={name}>
               {name} -{" "}
@@ -98,6 +91,15 @@ const AboutPage: NextPage<AboutPageProps> = (props) => {
                 {trimHttps(`${href}`)}
               </Link>
             </ListItem>
+          ))}
+        </List>
+
+        <Heading mt={8} fontSize="2xl">
+          Work Experience
+        </Heading>
+        <List spacing={3} py={4}>
+          {experience.map(({ title }) => (
+            <ListItem key={title}>{title}</ListItem>
           ))}
         </List>
       </Container>
